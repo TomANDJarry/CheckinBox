@@ -1,4 +1,4 @@
-import requests
+import requests,os
 import time
 email = ""
 passwd = ""
