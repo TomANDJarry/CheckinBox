@@ -21,9 +21,9 @@ jobs:
       - name: requirements
         run : pip3 install requests
 
-    - name: main
+      - name: main
         env:
           freeman_email: ${{ secrets.freeman_email }}
           freeman_passwd: ${{ secrets.freeman_passwd }}
-      run: |
-        python3 ./freeman.py
+        run: |
+          python3 ./freeman.py
