@@ -19,7 +19,7 @@ jobs:
           python-version: 3.7
 
       - name: requirements
-        run : pip3 install requests
+        run : pip3 install requests,os
 
       - name: main
         env:
