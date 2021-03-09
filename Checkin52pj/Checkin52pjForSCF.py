@@ -42,27 +42,6 @@ def pusher(*args):
             "content" : othermsg,
             "template" : "html",
             "topic" : pushplus_topic
-            }
-        else:
-            params = {
-                "token" : pushplus_token,
-                "title" : msg,
-                "content" : othermsg,
-                "template" : "html"
-            }
-        r = requests.post(sendurl, params=params)
-        print(r.json())
-        if r.json()["code"] != 200:
-            print(f"pushplus推送失败！{r.json()['msg']}")
-    if Skey:
-        if not Smode:
-            Smode = 'send'
-        if othermsg:
-            msg = msg + "\n" + othermsg
-        sendurl = f"https://push.xuthus.cc/{Smode}/{Skey}"
-        params = {"c" : msg}
-        requests.post(sendurl, params=params)
-
 def main(*args):
     try:
         msg = ""
