@@ -26,4 +26,4 @@ jobs:
           freeman_email: ${{ secrets.freeman_email }}
           freeman_passwd: ${{ secrets.freeman_passwd }}
         run: |
-          python3 ./freeman.py
+          python3 ./Checkin52pj/freeman.py
