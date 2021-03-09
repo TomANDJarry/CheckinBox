@@ -3,4 +3,3 @@ rsa
 beautifulsoup4
 cryptography
 lxml
-os
